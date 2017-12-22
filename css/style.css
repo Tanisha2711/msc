@@ -29,7 +29,7 @@ input[type="submit"],input[type="reset"],a,.w3_agileits_services1_grid1{
 }
 /*-- banner --*/
 .banner{
-	background:url(../images/cover.jpg) no-repeat 0px 0px;
+	background:url(../images/img/msc.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -37,6 +37,14 @@ input[type="submit"],input[type="reset"],a,.w3_agileits_services1_grid1{
 	-ms-background-size:cover;
 	min-height:770px;
 	position: relative;
+
+
+
+
+
+
+
+
 }
 .banner1{
 	background:url(../images/banner.jpg) no-repeat 0px 0px;
