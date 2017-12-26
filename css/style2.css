@@ -23,7 +23,7 @@ img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
 body{
-	background:black;
+	background:url(../images/log.jpg)no-repeat center 0px;
 	text-align: center;
 	font-family:Nunito-Light;
 	background-attachment: fixed;
@@ -38,7 +38,7 @@ body{
 
 .main-content{
 	width:32%;
-	background-color: grey;
+	background-color:grey;
 	margin:50px auto;
 }
 
