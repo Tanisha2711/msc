@@ -29,7 +29,7 @@ input[type="submit"],input[type="reset"],a,.w3_agileits_services1_grid1{
 }
 /*-- banner --*/
 .banner{
-	background:url(../images/log.jpg) no-repeat 0px 0px;
+	background:url(../images/log.jpg)  ;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -37,11 +37,9 @@ input[type="submit"],input[type="reset"],a,.w3_agileits_services1_grid1{
 	-ms-background-size:cover;
 	min-height:770px;
 	position: relative;
-
-
 }
 .banner1{
-	background:url(../images/banner.jpg) no-repeat 0px 0px;
+	background:url(../images/log.jpg);
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -49,6 +47,7 @@ input[type="submit"],input[type="reset"],a,.w3_agileits_services1_grid1{
 	-ms-background-size:cover;
 	min-height:300px;
 }
+
 /*-- nav --*/
 .navbar-default {
     background: none;
@@ -236,12 +235,6 @@ nav.navbar.navbar-default {
     animation: blink 0.7s infinite;
     color: #fff;
     font-size: 2.5em;
-}
-@-keyframes blink{
-0% { opacity:1; }
-50% { opacity:0; }
-100% { opacity:1; }
-
 }
 @-webkit-keyframes blink{
 	0% { opacity:1; }
@@ -603,7 +596,7 @@ nav.navbar.navbar-default {
 .w3_agile_team_grid_left span{
 	display:block;
 	font-size:1em;
-	color:#999;
+	color:white;
 	margin:1em 0 0;
 }
 .w3_agile_team_grid_right{
@@ -621,7 +614,7 @@ nav.navbar.navbar-default {
 }
 .w3_agile_team_grid_right p{
 	margin: 0.5em 0 0;
-    color: #999;
+    color: white;
     line-height: 2em;
     width: 60%;
 }
