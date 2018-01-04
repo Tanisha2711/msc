@@ -55,7 +55,7 @@ input[type="submit"],input[type="reset"],a,.w3_agileits_services1_grid1{
 	z-index: 1;
 	bottom: 0;
 	left: 0;
-	width: 770px;
+	width: 85em;
 	height: 43.75em;
 	-webkit-animation: cloudLoop 80s linear infinite;
 	animation: cloudLoop 80s linear infinite;
