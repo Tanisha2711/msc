@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <title></title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,13 +20,83 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
 <!-- gallery -->
 <link href="css/lsb.css" rel="stylesheet" type="text/css">
+<!-- //loader-->
+<link href="css/loader.css" rel="stylesheet">
 <!-- //gallery -->
 <!-- font-awesome-icons -->
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
 <link href="//fonts.googleapis.com/css?family=Prompt:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet"></head>
+<style type="text/css">
+	/*
+ *  Usage:
+ *
+      <div class="sk-rotating-plane"></div>
+ *
+ */
+	.sk-rotating-plane {
+		width: 40px;
+		height: 40px;
+		background-color: #333;
+		
+		position: absolute;
+		top: 48%;
+		left: 48%;
 
+		-webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+		animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+	@-webkit-keyframes sk-rotatePlane {
+		0% {
+			-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+			transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+		50% {
+			-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+			transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+		100% {
+			-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+	@keyframes sk-rotatePlane {
+		0% {
+			-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+			transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+		50% {
+			-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+			transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+		100% {
+			-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+	/*Custom*/
+	.spinner-wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ff6347;
+		z-index: 999999;
+	}
+</style>
+
+</head>
 <body>
+
+<!--CSS Spinner-->
+<div class="spinner-wrapper">
+<div class="sk-rotating-plane"></div>
+</div>
+
+<!--<div class="loader">-->
+	<!--<div class="box_lt"></div>-->
+	<!--<div class="box_rt"></div>-->
+	<!--<div class="box_lb"></div>-->
+	<!--<div class="box_rb"></div>-->
+<!--</div>-->
+
+<!--<div class="page-loader">-->
+	<!--<div class="loader">Loading...</div>-->
+<!--</div>-->
+
 <!-- banner -->
 <div class="banner">
 	<nav class="navbar navbar-default">
@@ -418,6 +489,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
         $().UItoTop({ easingType: 'easeOutQuart' });
 
+    });
+</script>
+<script>
+    $(document).ready(function() {
+//Preloader
+        $(window).load(function() {
+            preloaderFadeOutTime = 500;
+            function hidePreloader() {
+                var preloader = $('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        });
     });
 </script>
 <!-- //here ends scrolling icon -->
